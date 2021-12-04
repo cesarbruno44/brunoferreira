@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!------------------------------------------------------------------------------------------------------------->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="blog, pessoal, puc minas, puc, html">
+    <meta name="author" content="Pedro Lopes">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="https://kit.fontawesome.com/97a4d5baa9.js" crossorigin="anonymous"></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"></noscript>
+
+    <title>GitHub Search</title>
+</head>
+
+<!------------------------------------------------------------------------------------------------------------->
+
+<body>
+
+    <!------------------------------------------------------------------------------------------------------------->
+
+    <header class="header container-fluid">
+        <div class="row align-items-center">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="align-items-center">
+                    <div class="input-group rounded menu_search">
+                        <input id="search-input" type="search" class="form-control"/>
+                        <button class="input-group-text border-0 carbon" id="search-button"><i class="fas fa-search white"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!------------------------------------------------------------------------------------------------------------->
+
+    <main id="main" class="main container-fluid container-xl">
+        <section class="profile_general">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-xl-4 text-center">
+                    <img id="profile_img" class="profile_img rounded-circle" src="" alt="">
+                </div>
+
+                <div class="profile_texts col-lg-6 col-xl-8">
+                    <h1 id="profile_name" class="text-center text-lg-start"></h1>
+                    <div class="text-center text-lg-start">
+                        <span id="profile_user" class="profile_user text-center text-lg-start"></span>
+                        <span id="profile_follow" class="profile_user text-center text-lg-start"></span>
+                    </div>
+
+                    <div id="profile_bio" class="profile_bio"></div>
+                    <span id="profile_org" class="profile_data"></span>
+                    <span id="profile_location" class="profile_data"></span>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------------------------------------------------------------------------------------->
+
+        <section class="rep_general">
+            <h1 class="general_title">Repositories</h1>
+            <hr style="width: 140px; color: black; height: 1.5px; background-color:black; opacity: 100%; margin-top: 2px;" />
+
+            <div id="rep_rows" class="row">
+                
+            </div>
+        </section>
+    </main>
+
+    <!------------------------------------------------------------------------------------------------------------->
+
+    <footer id="footer" class="footer container-fluid">
+        <div class="footer_row row align-items-center">
+            <p class="col-12 col-md-9 d-flex justify-content-center justify-content-md-start">Developed with ❤️ - ICEI PUC Minas</b>
+            </p>
+
+            <span class="col-12 col-md-3 d-flex justify-content-md-end"><a href="https://icei.pucminas.br/" target="_blank"><img src="assets/images/icei.png" alt="ICEI PUC Minas"></a></span>
+        </div>
+    </footer>
+
+    <!------------------------------------------------------------------------------------------------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+
+    <script src="assets/scripts/index.js"></script>
+</body>
+
+</html>
